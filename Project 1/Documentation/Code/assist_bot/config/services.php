@@ -39,5 +39,10 @@ return [
             'tolerance' => env('STRIPE_WEBHOOK_TOLERANCE', 300),
         ],
     ],
+    'google' => [
+    'client_id' => '406501554433-lhqk72hpf2vgsh5qah3bnoarufcguumj.apps.googleusercontent.com',        // Your GitHub Client ID
+    'client_secret' => 'bdMT-gX_K1c9BBaHP0JQUaRI', // Your GitHub Client Secret
+    'redirect' => 'http://localhost:8000/login/google/callback',
+],
 
 ];
