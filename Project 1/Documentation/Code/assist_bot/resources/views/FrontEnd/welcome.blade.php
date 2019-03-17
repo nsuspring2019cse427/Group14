@@ -89,7 +89,7 @@
 
 						
 					<table style="overflow: hidden; margin-left:auto; 
-    margin-right:auto;">
+    margin-right:auto;>
 						<tr class="align-middle">
 							<td><input class="form-control" style="width: 600px;" name="q" id="transcript" type="text" class="search-query" placeholder="Ex. Name....">
 							</td>

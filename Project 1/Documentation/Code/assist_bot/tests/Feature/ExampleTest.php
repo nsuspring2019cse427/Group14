@@ -21,7 +21,7 @@ class ExampleTest extends TestCase
     public function testDashBoard()
     {
         $response = $this->get('/dashboard');
-        $response->assertStatus(200);
+        $response->assertSee('dashboard');
     }
 
     public function testMessages()
