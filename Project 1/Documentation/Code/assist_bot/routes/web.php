@@ -40,7 +40,6 @@ Route::group(['prefix' => 'tag'], function (){
     Route::post('/create', 'TagController@store')->name('tag.store');
 });
 
-
 Route::get('/createNewProfile', 'CreateNewProfileController@index')->name('createNewProfile');
 
 

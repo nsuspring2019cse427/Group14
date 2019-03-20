@@ -8,11 +8,15 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class UserModelTest extends TestCase
 {
-
-    public function user_name_attribute()
+    public function testBasicTest()
     {
-        // create user
-    	$user = User::create(['name'=>'Mahadi','email'=>'abualmahadi@yahoo.com','password'=>'random']);
+        $this->assertTrue(true);
+    }
 
-     }
+//    public function user_name_attribute()
+//    {
+//        // create user
+//    	$user = User::create(['name'=>'Mahadi','email'=>'abualmahadi@yahoo.com','password'=>'random']);
+//
+//     }
 }

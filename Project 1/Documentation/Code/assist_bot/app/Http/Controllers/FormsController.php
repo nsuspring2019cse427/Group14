@@ -17,6 +17,8 @@ class FormsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
     public function index()
     {
         $forms = Form::all();
