@@ -36,15 +36,7 @@ class ExampleTest extends TestCase
 
 
 
-    public function testQAStore()
-    {
-        $data = [
-            'question'=>'test',
-            'answer'=>'test des'
-        ];
-        $response = $this->post('/qa/create', $data);
-        $response->assertRedirect();
-    }
+
 
     public function testTagCreate()
     {
