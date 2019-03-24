@@ -9,7 +9,7 @@ use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class ExampleTest extends TestCase
+class CreateNewProfileTest extends TestCase
 {
     /**
      * A basic test example.
@@ -17,12 +17,11 @@ class ExampleTest extends TestCase
      * @return void
      * @test
      */
-
-
-    public function homepage()
-    {
-        $response = $this->get('/');
-        $response->assertStatus(200);
-    }
-
+   public function testCreateNewProfile()
+   {
+       $response = $this->get('/createNewProfile');
+       $response->assertStatus(200);
+   }
 }
+
+?>
