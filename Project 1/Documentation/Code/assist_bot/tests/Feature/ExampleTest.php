@@ -31,18 +31,6 @@ class ExampleTest extends TestCase
 //        $response->assertStatus(200);
 //    }
 
-
-
-
-
-
-
-
-    public function testTagCreate()
-    {
-        $response = $this->get('/tag/create');
-        $response->assertStatus(200);
-    }
     public function testTagStore()
     {
         $data = [
