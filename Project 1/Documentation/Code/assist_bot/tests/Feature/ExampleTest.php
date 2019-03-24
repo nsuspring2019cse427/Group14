@@ -25,22 +25,18 @@ class ExampleTest extends TestCase
         $response->assertStatus(200);
     }
 
-//    public function testMessages()
-//    {
-//        $response = $this->get('/messages');
-//        $response->assertStatus(200);
-//    }
+   // public function testMessages()
+   // {
+   //     $response = $this->get('/messages');
+   //     $response->assertStatus(200);
+   // }
 
-//    public function testCreateNewProfile()
-//    {
-//        $response = $this->get('/createNewProfile');
-//        $response->assertStatus(200);
-//    }
-    public function testBotmanPost()
-    {
-        $response = $this->post('/botman');
-        $response->assertOk();
-    }
+   // public function testCreateNewProfile()
+   // {
+   //     $response = $this->get('/createNewProfile');
+   //     $response->assertStatus(200);
+   // }
+
 
 
 
