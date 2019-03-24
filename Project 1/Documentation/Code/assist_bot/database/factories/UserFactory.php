@@ -21,3 +21,13 @@ $factory->define(App\User::class, function (Faker $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->state(App\User::class, 'delinquent', [
+    'account_status' => 'delinquent',
+]);
+
+$factory->state(App\User::class, 'address', function ($faker) {
+    return [
+        'address' => $faker->address,
+    ];
+});
