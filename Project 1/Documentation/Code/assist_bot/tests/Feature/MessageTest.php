@@ -9,7 +9,7 @@ use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class BotPostTest extends TestCase
+class MessageTest extends TestCase
 {
     /**
      * A basic test example.
@@ -17,11 +17,11 @@ class BotPostTest extends TestCase
      * @return void
      * @test
      */
-    public function testBotmanPost()
-    {
-        $response = $this->post('/botman');
-        $response->assertOk();
-    }
+   public function testMessages()
+   {
+       $response = $this->get('/messages');
+       $response->assertStatus(200);
+   }
 }
 
 ?>

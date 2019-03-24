@@ -25,11 +25,7 @@ class ExampleTest extends TestCase
         $response->assertStatus(200);
     }
 
-   // public function testMessages()
-   // {
-   //     $response = $this->get('/messages');
-   //     $response->assertStatus(200);
-   // }
+
 
    // public function testCreateNewProfile()
    // {
