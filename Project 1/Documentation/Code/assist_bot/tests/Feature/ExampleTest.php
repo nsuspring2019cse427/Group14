@@ -31,14 +31,7 @@ class ExampleTest extends TestCase
 //        $response->assertStatus(200);
 //    }
 
-    public function testTagStore()
-    {
-        $data = [
-            'name'=>'test'
-        ];
-        $response = $this->post('/tag/create', $data);
-        $response->assertRedirect();
-    }
+
     public function testTagIndex()
     {
         $response = $this->get('/tag');
