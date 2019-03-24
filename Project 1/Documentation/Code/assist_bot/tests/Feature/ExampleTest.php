@@ -34,27 +34,8 @@ class ExampleTest extends TestCase
 
 
 
-    public function testFormSearch()
-    {
-        $response = $this->get('/forms/search');
-        $response->assertStatus(200);
-    }
-    public function testFormDownload()
-    {
-        $response = $this->get('/forms/download/5'); // 5 is parametter
-        $response->assertStatus(200);
-    }
 
-    public function testQAList()
-    {
-        $response = $this->get('/qa');
-        $response->assertStatus(200);
-    }
-    public function testQACreate()
-    {
-        $response = $this->get('/qa/create');
-        $response->assertStatus(200);
-    }
+
     public function testQAStore()
     {
         $data = [

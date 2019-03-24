@@ -9,7 +9,7 @@ use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class QAListCheckTest extends TestCase
+class QACreateTest extends TestCase
 {
     /**
      * A basic test example.
@@ -17,9 +17,9 @@ class QAListCheckTest extends TestCase
      * @return void
      * @test
      */
-    public function testQAList()
+    public function testQACreate()
     {
-        $response = $this->get('/qa');
+        $response = $this->get('/qa/create');
         $response->assertStatus(200);
     }
 }
