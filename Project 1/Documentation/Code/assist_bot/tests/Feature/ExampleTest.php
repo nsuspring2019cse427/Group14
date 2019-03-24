@@ -31,25 +31,11 @@ class ExampleTest extends TestCase
 //        $response->assertStatus(200);
 //    }
 
-
-    public function testTagIndex()
-    {
-        $response = $this->get('/tag');
-        $response->assertStatus(200);
-    }
-
-
 //    public function testCreateNewProfile()
 //    {
 //        $response = $this->get('/createNewProfile');
 //        $response->assertStatus(200);
 //    }
-
-    public function testBotman()
-    {
-        $response = $this->get('/botman/tinker');
-        $response->assertStatus(200);
-    }
     public function testBotmanPost()
     {
         $response = $this->post('/botman');
