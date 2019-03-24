@@ -24,12 +24,7 @@ class ExampleTest extends TestCase
         $response = $this->get('/');
         $response->assertStatus(200);
     }
-    public function testDashBoard()
-    {
-        $user = factory(User::class)->make();
-        $response = $this->actingAs($user)->get('/dashboard');
-        $response->assertStatus(200);
-    }
+
 //    public function testMessages()
 //    {
 //        $response = $this->get('/messages');
