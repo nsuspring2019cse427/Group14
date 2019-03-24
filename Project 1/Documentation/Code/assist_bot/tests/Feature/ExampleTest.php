@@ -31,30 +31,9 @@ class ExampleTest extends TestCase
 //        $response->assertStatus(200);
 //    }
 
-    public function testFormList()
-    {
-        $response = $this->get('/forms');
-        $response->assertStatus(200);
-    }
-    public function testFormCreate()
-    {
-        $response = $this->get('/forms/create');
-        $response->assertStatus(200);
-    }
-    public function testFormStore()
-    {
-        Storage::fake('avatars');
-        $file = UploadedFile::fake()->image('avatar.jpg');
-        $data = [
-            'title'=>'test',
-            'description'=>'test des',
-            'file'=> $file,
-            'tags'=>[1, 2]
-        ];
-        $response = $this->post('/forms/create', $data);
-        $response->assertRedirect();
 
-    }
+
+
     public function testFormSearch()
     {
         $response = $this->get('/forms/search');
